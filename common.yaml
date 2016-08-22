@@ -1,0 +1,7 @@
+---
+base::proxy_server: "http://192.168.0:3128"
+
+windows::proxy_server: "%{hiera('base::proxy_server')}"
+windows::system::iso_folder: 'c:\iso_source'
+windows::software::base_url: 'https://s3-eu-west-1.amazonaws.com/puppet-stuff'
+windows::software::winsxs_source_zip_url: "%{hiera('windows::software::base_url')}/AppSoftware/Microsoft/ISOSource_2012/isosource_2012_sxs.zip"
