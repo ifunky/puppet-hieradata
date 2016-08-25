@@ -1,0 +1,3 @@
+---
+
+base::params::proxy_server: 'http://dan:3128'
