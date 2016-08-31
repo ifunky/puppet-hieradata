@@ -1,5 +1,7 @@
 ---
-base::proxy_server: "http://192.168.0:3128"
+base::params::root_web_path: 'd:\RBIWebProjects'
+base::params::web_logs_path: 'd:\RBIWebLogs'
+
 
 windows::proxy_server: "%{hiera('base::proxy_server')}"
 windows::system::iso_folder: 'c:\iso_source'
