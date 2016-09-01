@@ -1,3 +1,2 @@
 ---
-
-base::params::proxy_server: 'http://dan:3128'
+base::params::proxy_server: ''
