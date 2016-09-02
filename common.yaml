@@ -2,6 +2,20 @@
 base::params::root_web_path: 'd:\RBIWebProjects'
 base::params::web_logs_path: 'd:\RBIWebLogs'
 
+# Common site definitions
+egi_websites:
+  egiweb:
+    site_name: ICISNews
+    enable_32_bit: false
+    pipeline_mode: Classic
+    runtime_version: v4.0
+    root_web_folder: "%{hiera('base::params::root_web_path')}"
+    bindings:
+      -
+       port: 80
+       host_header: d
+       ip_address: '*'
+       protocol: http
 
 windows::proxy_server: "%{hiera('base::proxy_server')}"
 windows::system::iso_folder: 'c:\iso_source'
