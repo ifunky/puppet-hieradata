@@ -2,6 +2,7 @@
 base::params::root_web_path: 'd:\RBIWebProjects'
 base::params::web_logs_path: 'd:\RBIWebLogs'
 
+
 # Common site definitions
 egi_websites:
   egiweb:
