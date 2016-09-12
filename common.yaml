@@ -2,6 +2,56 @@
 base::params::root_web_path: 'd:\RBIWebProjects'
 base::params::web_logs_path: 'd:\RBIWebLogs'
 
+# Common site definitions
+egi_websites:
+  egiweb:
+    site_name: egi.web
+    enable_32_bit: false
+    pipeline_mode: Classic
+    runtime_version: v4.0
+    root_web_folder: "%{hiera('base::params::root_web_path')}"
+    bindings:
+      -
+       port: 80
+       host_header:
+       ip_address: '*'
+       protocol: http
+  egiadmin:
+    site_name: egi.administration
+    enable_32_bit: false
+    pipeline_mode: Classic
+    runtime_version: v4.0
+    root_web_folder: "%{hiera('base::params::root_web_path')}"
+    bindings:
+      -
+       port: 8080
+       host_header:
+       ip_address: '*'
+       protocol: http
+  egiauth:
+    site_name: egi.api.auth
+    enable_32_bit: false
+    pipeline_mode: Classic
+    runtime_version: v4.0
+    root_web_folder: "%{hiera('base::params::root_web_path')}"
+    bindings:
+      -
+       port: 8081
+       host_header:
+       ip_address: '*'
+       protocol: http
+  egidata:
+    site_name: egi.api.data
+    enable_32_bit: false
+    pipeline_mode: Classic
+    runtime_version: v4.0
+    root_web_folder: "%{hiera('base::params::root_web_path')}"
+    bindings:
+      -
+       port: 8082
+       host_header:
+       ip_address: '*'
+       protocol: http
 
 windows::proxy_server: "%{hiera('base::proxy_server')}"
 windows::system::iso_folder: 'c:\iso_source'
