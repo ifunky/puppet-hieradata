@@ -37,7 +37,7 @@ egi_websites:
     root_web_folder: "%{hiera('base::params::root_web_path')}"
     bindings:
       -
-       port: 8081
+       port: 8084
        host_header:
        ip_address: '*'
        protocol: http
@@ -50,6 +50,18 @@ egi_websites:
     bindings:
       -
        port: 8082
+       host_header:
+       ip_address: '*'
+       protocol: http
+  qasactiveserver:
+    site_name: egi.qas.activeserverservice
+    enable_32_bit: false
+    pipeline_mode: Classic
+    runtime_version: v4.0
+    root_web_folder: "%{hiera('base::params::root_web_path')}"
+    bindings:
+      -
+       port: 8055
        host_header:
        ip_address: '*'
        protocol: http
