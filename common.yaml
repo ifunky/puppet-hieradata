@@ -2,7 +2,6 @@
 base::params::root_web_path: 'd:\RBIWebProjects'
 base::params::web_logs_path: 'd:\RBIWebLogs'
 
-
 # Common site definitions
 egi_websites:
   egiweb:
@@ -14,7 +13,7 @@ egi_websites:
     bindings:
       -
        port: 80
-       host_header:
+       host_header: egi.local.rbidev.ds
        ip_address: '*'
        protocol: http
   egiadmin:
@@ -25,8 +24,8 @@ egi_websites:
     root_web_folder: "%{hiera('base::params::root_web_path')}"
     bindings:
       -
-       port: 8080
-       host_header:
+       port: 80
+       host_header: administration.egi.local.rbidev.ds
        ip_address: '*'
        protocol: http
   egiauth:
@@ -62,7 +61,7 @@ egi_websites:
     bindings:
       -
        port: 8055
-       host_header:
+       host_header: egi.local.rbidev.ds
        ip_address: '*'
        protocol: http
 
