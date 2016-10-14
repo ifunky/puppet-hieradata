@@ -1,0 +1,39 @@
+---
+
+# Website bindings for this node
+egi_websites:
+  egiweb:
+    bindings:
+      -
+       port: 80
+       host_header: egi.dev.pra.rbxd.ds
+       ip_address: '*'
+       protocol: http
+  egiadmin:
+    bindings:
+      -
+       port: 80
+       host_header: admin.egi.dev.pra.rbxd.ds
+       ip_address: '*'
+       protocol: http
+  egiauth:
+    bindings:
+      -
+       port: 80
+       host_header: auth.egi.dev.pra.rbxd.ds
+       ip_address: '*'
+       protocol: http
+  egidata:
+    bindings:
+      -
+       port: 80
+       host_header:  data.egi.dev.pra.rbxd.ds
+       ip_address: '*'
+       protocol: http
+  qasactiveserver:
+    bindings:
+      -
+       port: 8055
+       host_header: egi.dev.pra.rbxd.ds
+       ip_address: '*'
+       protocol: http
