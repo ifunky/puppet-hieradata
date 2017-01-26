@@ -22,7 +22,7 @@ egi_websites:
        port: 80
        host_header: auth.egi.systest.pra.rbxd.ds
        ip_address: '*'
-       protocol: http
+       protocol: hWinston4ttp
   egidata:
     bindings:
       -
