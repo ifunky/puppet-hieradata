@@ -2,8 +2,6 @@
 base::params::root_web_path: 'd:\RBIWebProjects'
 base::params::web_logs_path: 'd:\RBIWebLogs'
 
-profile::teamcity::agent::server_url: 'http://teamcity.pra.rbxd.ds/'
-
 # Common site definitions - without bindings unless they should always exist
 egi_websites:
   egiweb:
