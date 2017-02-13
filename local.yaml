@@ -1,5 +1,4 @@
 ---
-base::params::proxy_server: ''
+base::proxy_server: ''
 base::octopus_server_url: 'http://myoctopusserver.net'
-
-profile::teamcity::agent::server_url: 'http://teamcity.pra.rbxd.ds/'
+base::elasticsearch_server: 'http://somewhere.net'
